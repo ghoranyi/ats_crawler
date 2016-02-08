@@ -64,4 +64,4 @@ def start(origin, job_page):
 
 
 def list_formatter(list):
-    return ";".join([item[0] for item in list])
+    return ";".join([item for item in list])
