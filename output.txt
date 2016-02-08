@@ -1,0 +1,5 @@
+Hostname,Has_ATS,ATS,ATS_Pages,Positions,Departments
+http://evernote.com,FALSE,[],[],0,[]
+http://freshdesk.com,TRUE,['Recruiterbox'],['https://freshdesk.recruiterbox.com'],14,[]
+http://ifttt.com,TRUE,['Lever'],['https://jobs.lever.co/ifttt/'],20,[u'Community', u'Design', u'Engineering', u'Engineering', u'Engineering', u'Engineering', u'Engineering', u'Engineering', u'Engineering', u'Other']
+http://infogr.am,TRUE,['Workable'],[u'https://infogram.workable.com'],2,[]

@@ -1,0 +1,21 @@
+redis:
+  image: redis
+  expose:
+    - "6379"
+
+app:
+  build: .
+  links:
+    - "redis:redis"
+  volumes:
+      - output:/opt/ghoranyi/ats_crawler/output
+
+worker:
+  build: .
+  links:
+    - "redis:redis"
+  volumes:
+    - output:/opt/ghoranyi/ats_crawler/output
+  command: virtualenv/bin/celery -A utils.ats_analyzer_runner worker --loglevel=info
+  environment:
+    - C_FORCE_ROOT=true
